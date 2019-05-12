@@ -3,6 +3,7 @@ package com.touchthroughviewissue;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.rome2rio.android.reactnativetouchthroughview.TouchThroughViewPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,6 +25,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new TouchThroughViewPackage(),
             new RNScreensPackage()
       );
     }

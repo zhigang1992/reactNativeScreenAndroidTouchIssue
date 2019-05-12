@@ -4851,6 +4851,11 @@ react-native-screens@^1.0.0-alpha.22:
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-1.0.0-alpha.22.tgz#7a120377b52aa9bbb94d0b8541a014026be9289b"
   integrity sha512-kSyAt0AeVU6N7ZonfV6dP6iZF8B7Bce+tk3eujXhzBGsLg0VSLnU7uE9VqJF0xdQrHR91ZjGgVMieo/8df9KTA==
 
+react-native-touch-through-view@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-touch-through-view/-/react-native-touch-through-view-1.1.1.tgz#7d9cc7b69854f36f018c00e30167519ee830c8a7"
+  integrity sha512-7aR/EJ8nh4rntJ4BYLbX8XyrBcXjUc7VtsTuuja5dNvIuPv2WawZjwB9VckdpVEREq2hEsXaGXhLH9L2l2Q5FA==
+
 react-native@0.59.8:
   version "0.59.8"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.59.8.tgz#ade4141c777c60f5ec4889d9811d0f80a9d56547"
