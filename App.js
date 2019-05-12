@@ -6,9 +6,10 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Button, Platform, StyleSheet, Text, View} from 'react-native';
-import {createAppContainer, createStackNavigator} from 'react-navigation';
+import React from 'react';
+import {Button, StyleSheet, View} from 'react-native';
+import {createAppContainer} from 'react-navigation';
+import {createFluidNavigator} from "react-navigation-fluid-transitions";
 
 const PageA = ({navigation}) => (
     <View style={{flex: 1}}>
@@ -19,9 +20,6 @@ const PageA = ({navigation}) => (
 const PageB = () => (
     <View style={styles.container}>
       <Button onPress={() => alert("TEST")} title="TEST"/>
-      <View style={StyleSheet.absoluteFill}>
-          <View style={{flex: 1}}/>
-      </View>
     </View>
 );
 
@@ -34,7 +32,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default createAppContainer(createStackNavigator({
+export default createAppContainer(createFluidNavigator({
     PageA,
     PageB
 }));
