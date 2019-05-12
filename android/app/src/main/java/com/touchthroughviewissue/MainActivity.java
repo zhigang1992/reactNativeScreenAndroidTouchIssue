@@ -1,17 +1,12 @@
 package com.touchthroughviewissue;
 
 import com.facebook.react.ReactActivity;
-import android.view.MotionEvent;
-import com.rome2rio.android.reactnativetouchthroughview.TouchThroughTouchHandlerInterface;
-import com.rome2rio.android.reactnativetouchthroughview.TouchThroughTouchHandler;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
 
 public class MainActivity extends ReactActivity {
-
-    private TouchThroughTouchHandler touchThroughTouchHandler = new TouchThroughTouchHandler();
 
     /**
      * Returns the name of the main component registered from JavaScript.
@@ -30,17 +25,6 @@ public class MainActivity extends ReactActivity {
          return new RNGestureHandlerEnabledRootView(MainActivity.this);
         }
       };
-    }
-
-    public TouchThroughTouchHandler getTouchThroughTouchHandler() {
-        return touchThroughTouchHandler;
-    }
-
-    @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
-        touchThroughTouchHandler.handleTouchEvent(ev);
-
-        return super.dispatchTouchEvent(ev);
     }
 
 }
